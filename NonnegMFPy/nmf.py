@@ -7,7 +7,7 @@ __python_version__ = "3.5.1"
 __numpy_version__ = "1.11.0"
 __scipy_version__ = "0.17.0"
 
-__lastdate__ = "2016.05.22"
+__lastdate__ = "2024.07.08"
 __version__ = "0.1.0"
 
 
