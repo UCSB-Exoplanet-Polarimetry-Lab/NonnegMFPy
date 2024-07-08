@@ -205,11 +205,11 @@ class NMF:
             self.V[self.V<0] = 0.
 
         if (M is None):
-            self.M = np.ones(self.X.shape, dtype=np.bool)
+            self.M = np.ones(self.X.shape, dtype=bool) #`np.bool` was a deprecated alias for the builtin `bool`
         else:
             if (M.shape != self.X.shape):
                 raise ValueError("M(ask) has wrong shape.")
-            if (M.dtype != np.bool):
+            if (M.dtype != bool): #`np.bool` was a deprecated alias for the builtin `bool`
                 raise TypeError("M(ask) needs to be boolean.")
             self.M = np.copy(M)
 
